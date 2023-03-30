@@ -1,0 +1,9 @@
+applications:
+  - buildpack: nodejs_buildpack
+    name: ordinemateriali-ui
+    path: .
+    services:
+      - OrdineMateriali-destination-service
+      - OrdineMateriali-xsuaa-service
+      - workflow
+    memory: 128M

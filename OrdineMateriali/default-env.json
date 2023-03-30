@@ -1,0 +1,111 @@
+{
+    "VCAP_SERVICES": {
+        "destination": [
+            {
+                "name": "OrdineMateriali-destination-service",
+                "instance_name": "OrdineMateriali-destination-service",
+                "label": "destination",
+                "tags": [
+                    "destination",
+                    "conn",
+                    "connsvc",
+                    "endpoint:https://api.cf.eu10.hana.ondemand.com",
+                    "org:corso-btp-team-rossano",
+                    "space:DEV"
+                ],
+                "plan": "lite",
+                "credentials": {
+                    "clientid": "sb-cloneadc70324b2274c89aa9a552cf84357ad!b179047|destination-xsappname!b404",
+                    "clientsecret": "e7ea95c4-7a46-4197-9a67-994a97380c13$FZuIgKuG_sN9JUEHupgEvP4iJRwEoEptyx2CC-qGWYA=",
+                    "credential-type": "binding-secret",
+                    "identityzone": "corso-btp-team-rossano",
+                    "instanceid": "adc70324-b227-4c89-aa9a-552cf84357ad",
+                    "service_key_name": "key",
+                    "tenantid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.eu10.hana.ondemand.com",
+                    "uri": "https://destination-configuration.cfapps.eu10.hana.ondemand.com",
+                    "url": "https://corso-btp-team-rossano.authentication.eu10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzBp1oOQwfwAFs3pLMjxg\nxqHNbZWwUJ0lvj/t0dhwRMyLBBiHBnyt5DrV3IODSmORwl3TiFv8H/D/hu0tk54D\n9/PZVgevHGDBZ2bgeODHUPlIfC4wge3+j47MODactU/9HKuVbbnQJpFwmeqWEhLQ\nzux9xnOTJm18T5nT3AWh2AeCv52FFfjD/7wBCdj8Ku3Dyj+OL+ZzZG9dkepq7P9t\n05xfLzjxX5pmVJ04EUx2TF7zfTdR1venHl8malNR2PZcBQbgVtExoLjA29mDPfM4\n8I3ovaKWW6mmnP+GsHQ8e0dIt80IbKJxR2yneIIu6MSzqRRI/D+d9/IWVSvV5LgS\niQIDAQAB\n-----END PUBLIC KEY-----",
+                    "xsappname": "cloneadc70324b2274c89aa9a552cf84357ad!b179047|destination-xsappname!b404"
+                }
+            }
+        ],
+        "html5-apps-repo": [
+            {
+                "name": "OrdineMateriali-html5-app-host-service",
+                "instance_name": "OrdineMateriali-html5-app-host-service",
+                "label": "html5-apps-repo",
+                "tags": [
+                    "html5appsrepo",
+                    "html5-apps-repo-rt",
+                    "html5-apps-rt",
+                    "html5-apps-repo-dt",
+                    "html5-apps-dt",
+                    "endpoint:https://api.cf.eu10.hana.ondemand.com",
+                    "org:corso-btp-team-rossano",
+                    "space:DEV"
+                ],
+                "plan": "app-host",
+                "credentials": {
+                    "app_host_id": "a08fd8ef-54f0-47a5-9c00-e690e665c5ad",
+                    "content_endpoint": "https://html5-apps-repo-dt.cfapps.eu10.hana.ondemand.com",
+                    "saasregistryenabled": true,
+                    "sap.cloud.service": "html5-apps-repo-dt",
+                    "service_key_name": "key",
+                    "uaa": {
+                        "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+                        "clientid": "sb-a08fd8ef-54f0-47a5-9c00-e690e665c5ad!b179047|html5-apps-repo-uaa!b1685",
+                        "clientsecret": "15566243-fd69-4ed8-8b17-54346a5ff879$0-h4Y3fXSTcg_cZwoec4ANOH2znqJrmD3iQcyfz9v_4=",
+                        "credential-type": "binding-secret",
+                        "identityzone": "corso-btp-team-rossano",
+                        "identityzoneid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                        "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+                        "subaccountid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                        "tenantid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                        "tenantmode": "dedicated",
+                        "uaadomain": "authentication.eu10.hana.ondemand.com",
+                        "url": "https://corso-btp-team-rossano.authentication.eu10.hana.ondemand.com",
+                        "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzBp1oOQwfwAFs3pLMjxg\nxqHNbZWwUJ0lvj/t0dhwRMyLBBiHBnyt5DrV3IODSmORwl3TiFv8H/D/hu0tk54D\n9/PZVgevHGDBZ2bgeODHUPlIfC4wge3+j47MODactU/9HKuVbbnQJpFwmeqWEhLQ\nzux9xnOTJm18T5nT3AWh2AeCv52FFfjD/7wBCdj8Ku3Dyj+OL+ZzZG9dkepq7P9t\n05xfLzjxX5pmVJ04EUx2TF7zfTdR1venHl8malNR2PZcBQbgVtExoLjA29mDPfM4\n8I3ovaKWW6mmnP+GsHQ8e0dIt80IbKJxR2yneIIu6MSzqRRI/D+d9/IWVSvV5LgS\niQIDAQAB\n-----END PUBLIC KEY-----",
+                        "xsappname": "a08fd8ef-54f0-47a5-9c00-e690e665c5ad!b179047|html5-apps-repo-uaa!b1685",
+                        "zoneid": "123f3274-c93b-4c76-a108-02b6288de7c1"
+                    },
+                    "uri": "https://html5-apps-repo-dt.cfapps.eu10.hana.ondemand.com",
+                    "vendor": "SAP"
+                }
+            }
+        ],
+        "xsuaa": [
+            {
+                "name": "OrdineMateriali-xsuaa-service",
+                "instance_name": "OrdineMateriali-xsuaa-service",
+                "label": "xsuaa",
+                "tags": [
+                    "xsuaa",
+                    "endpoint:https://api.cf.eu10.hana.ondemand.com",
+                    "org:corso-btp-team-rossano",
+                    "space:DEV"
+                ],
+                "plan": "application",
+                "credentials": {
+                    "apiurl": "https://api.authentication.eu10.hana.ondemand.com",
+                    "clientid": "sb-ordinemateriali!t179047",
+                    "clientsecret": "uWZjdOfihOJMpeF+cvY8+3UXWLQ=",
+                    "credential-type": "instance-secret",
+                    "identityzone": "corso-btp-team-rossano",
+                    "identityzoneid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                    "sburl": "https://internal-xsuaa.authentication.eu10.hana.ondemand.com",
+                    "service_key_name": "key",
+                    "subaccountid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                    "tenantid": "123f3274-c93b-4c76-a108-02b6288de7c1",
+                    "tenantmode": "dedicated",
+                    "uaadomain": "authentication.eu10.hana.ondemand.com",
+                    "url": "https://corso-btp-team-rossano.authentication.eu10.hana.ondemand.com",
+                    "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzBp1oOQwfwAFs3pLMjxg\nxqHNbZWwUJ0lvj/t0dhwRMyLBBiHBnyt5DrV3IODSmORwl3TiFv8H/D/hu0tk54D\n9/PZVgevHGDBZ2bgeODHUPlIfC4wge3+j47MODactU/9HKuVbbnQJpFwmeqWEhLQ\nzux9xnOTJm18T5nT3AWh2AeCv52FFfjD/7wBCdj8Ku3Dyj+OL+ZzZG9dkepq7P9t\n05xfLzjxX5pmVJ04EUx2TF7zfTdR1venHl8malNR2PZcBQbgVtExoLjA29mDPfM4\n8I3ovaKWW6mmnP+GsHQ8e0dIt80IbKJxR2yneIIu6MSzqRRI/D+d9/IWVSvV5LgS\niQIDAQAB\n-----END PUBLIC KEY-----",
+                    "xsappname": "ordinemateriali!t179047",
+                    "zoneid": "123f3274-c93b-4c76-a108-02b6288de7c1"
+                }
+            }
+        ]
+    }
+}

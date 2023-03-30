@@ -1,0 +1,31 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/bpmworkflowruntime/(.*)$",
+      "target": "/$1",
+      "service": "com.sap.bpm.workflow",
+      "endpoint": "workflow_rest_url",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/resources/(.*)$",
+      "target": "/resources/$1",
+      "authenticationType": "none",
+      "destination": "ui5"
+    },
+    {
+      "source": "^/catalogo/(.*)",
+      "target": "$1",
+      "destination": "catalog",
+      "httpMethods": ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT", "PATCH"]
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}

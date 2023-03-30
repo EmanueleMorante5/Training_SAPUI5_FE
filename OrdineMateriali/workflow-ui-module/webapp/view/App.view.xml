@@ -1,0 +1,85 @@
+<mvc:View controllerName="ordinemateriali.workflowuimoduleemanuele.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <App id="App">
+        <pages>
+            <Page title="Acquisto Materiali">
+                <content>
+                    <VBox id="idVboxSupplier">
+                        <f:SimpleForm id="REQUESTFORM2" columnsL="1" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" emptySpanXL="2" emptySpanL="2" emptySpanM="1" emptySpanS="0" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12">
+                            <core:Title id="idTitleSupplier" text="{i18n>field}"/>
+
+                            <Label required="true" visible="true" text="Nome Venditore" />
+                            <!--<Input visible="true" editable="true" 
+                                id="nameSupplier" value="{view>/nameSupplier}" 
+                                enabled="true" maxLength="50" type="Text"/>-->
+                            <ComboBox visible="true" editable="true" id="nameSupplier" 
+                                items="{supplier>/listSupplier}" value="{view>/nameSupplier}">
+                                <core:Item text="{supplier>name}"/>
+        
+                            </ComboBox>
+                            
+                            <Label required="true" visible="true" text="Partita IVA venditore" />
+                            <Input visible="true" editable="true" 
+                                id="taxCodeSupplier" value="{view>/taxCodeSupplier}" 
+                                enabled="true" maxLength="50" type="Text"/>
+
+                            <Label required="true" visible="true" text="Codice Venditore" />
+                            <Input visible="true" editable="true" 
+                                id="codeSupplier" value="{view>/codeSupplier}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Numero Telefono Venditore" />
+                            <Input visible="true" editable="true" 
+                                id="tellNumber" value="{view>/tellNumber}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Indirizzo Venditore" />
+                            <Input visible="true" editable="true" 
+                                id="addressSupplier" value="{view>/addressSupplier}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Fornitore Censito" />
+                            <Input visible="true" editable="true" 
+                                id="isPresent" value="{view>/isPresent}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Nome Materiale" />
+                            <Input visible="true" editable="true" 
+                                id="nameMaterial" value="{view>/nameMaterial}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Descizione Materiale" />
+                            <Input visible="true" editable="true" 
+                                id="descriptionMaterial" value="{view>/descriptionMaterial}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Codice Materiale" />
+                            <Input visible="true" editable="true" 
+                                id="codeMaterial" value="{view>/codeMaterial}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Sconto Materiale" />
+                            <Input visible="true" editable="true" 
+                                id="saleMaterial" value="{view>/saleMaterial}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                            
+                            <Label required="true" visible="true" text="Costo Materiale" />
+                            <Input visible="true" editable="true" 
+                                id="costMaterial" value="{view>/costMaterial}" 
+                                enabled="true" maxLength="50" type="Text"/>
+                        </f:SimpleForm>
+                    </VBox>
+                </content>
+                <footer>
+                    <OverflowToolbar>
+                        <ToolbarSpacer/>
+                        <Button id="create" text="Creazione" type="Accept" press="onPressCreateSaveRequest" visible="true"/>
+                    </OverflowToolbar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
